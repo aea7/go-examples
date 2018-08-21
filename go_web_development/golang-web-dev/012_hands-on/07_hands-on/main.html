@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{range .}}
+{{.Name}}
+{{range .Menu}}
+{{range .Breakfast}}
+{{.Price}} and the name is: {{.Name}}
+{{end}}
+{{range .Lunch}}
+{{.Price}} and the name is: {{.Name}}
+{{end}}
+{{range .Dinner}}
+{{.Price}} and the name is: {{.Name}}
+{{end}}
+{{end}}
+{{end}}
+
+
+</body>
+</html>

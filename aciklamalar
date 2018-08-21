@@ -1,0 +1,5 @@
+
+tour_of_go -		tour golang sitesinden örnekler
+gzip	-		gzip örneği youtubeta adding gzip compression to a go web application, http için standart
+websockets  - 		websockets (js)
+rabbitMQ	-	messaging queue, business queue with rabbitmq
