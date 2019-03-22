@@ -9,12 +9,18 @@ import (
 	"strconv"
 )
 
+const db_host = "trivago.cm7fu3cututl.eu-central-1.rds.amazonaws.com"
+const db_user = "trivago"
+const db_password = "trivagopassword"
+const db_name = "trivago"
+const db_port = "5432"
+
 var db *sql.DB
 var tpl *template.Template
 
 func init() {
 	var err error
-	db, err = sql.Open("postgres", "postgres://bond:password@localhost/bookstore?sslmode=disable")
+	db, err = sql.Open("postgres", fmt.Sprintf("host=%s port=%s user=%s dbname=%s password=%s sslmode=disable", db_host, db_port, db_user, db_name, db_password))
 	if err != nil {
 		panic(err)
 	}
